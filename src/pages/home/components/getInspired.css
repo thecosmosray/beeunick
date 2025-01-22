@@ -1,0 +1,23 @@
+.getInspired{
+    text-align: center;
+    padding:100px 0;
+}
+
+.getInspired .images-div{
+    display: flex;
+    margin: 40px 0 100px;
+    height: 505px;
+}
+
+.getInspired .images-div .image{
+    height: 505px;
+    overflow: hidden;
+    flex: 1;
+}
+
+.getInspired .images-div .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
