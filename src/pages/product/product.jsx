@@ -1,10 +1,12 @@
 import React from 'react'
 import './product.css'
-import { Navbar } from '../../utils/export'
+import { Footer, Navbar, Trending } from '../../utils/export'
 import { IoIosArrowForward } from "react-icons/io";
-import { cloth1, cloth2, cloth3, cloth4, cloth5, cloth6, cloth7 } from '../../assets';
+import { cloth1, cloth2, cloth3, cloth4, cloth5, cloth6, cloth7, prd, prd2, prd3 } from '../../assets';
 import { FaStar, FaStarHalf } from "react-icons/fa";
 import { IoBagHandle } from "react-icons/io5";
+import { FaTruck } from "react-icons/fa";
+import { AiFillSafetyCertificate, AiOutlineSafety } from "react-icons/ai";
 
 const Product = () => {
     return <>
@@ -18,7 +20,11 @@ const Product = () => {
             <div className="details">
                 <div className="child image-box">
                     <div className="image">
-                        <img src={cloth1} alt="" />
+                        <img src={prd} alt="" />
+
+                        <div className="rating">
+                            <FaStar className='star' />  Highly rated
+                        </div>
                     </div>
                     <div className="image-col">
                         <div className="image-col-box">
@@ -41,12 +47,12 @@ const Product = () => {
                             rebook
                         </div>
                         <div className="id">
-                            #sexisbest2345
+                            #isbest2345
                         </div>
                     </div>
 
                     <div className="head">
-                        sexy gurl hoddie
+                        gurl hoddie extra comfy
                     </div>
 
                     <div className="stars">
@@ -69,7 +75,7 @@ const Product = () => {
                             color - white
                         </div>
                         <div className="image-col">
-                            <div className="image-col-box">
+                            <div className="image-col-box active">
                                 <img src={cloth1} alt="" />
                             </div>
                             <div className="image-col-box">
@@ -87,10 +93,10 @@ const Product = () => {
                             size - M
                         </div>
                         <div className="size-box">
-                            <div className="box active">
+                            <div className="box ">
                                 S
                             </div>
-                            <div className="box">
+                            <div className="box active">
                                 M
                             </div>
                             <div className="box">
@@ -111,13 +117,82 @@ const Product = () => {
                         </div>
 
                         <div className="add_to_cart">
-                           <IoBagHandle  className='i'/> add to cart
+                            <IoBagHandle className='i' /> add to cart
+                        </div>
+
+                    </div>
+                    <div className="free_delivery">
+                        <span className="icon"><FaTruck className='i' /></span>
+                       free delivery upto 5000 rs
+                    </div>
+                    <div className="secure_delivery">
+                        <span className="icon"><AiFillSafetyCertificate className='i' /></span>
+                       100% secure dilevery 
+                    </div>
+                    <div className="details_text">
+                        Inspired by the original low-profile tennis shoes, the Nike Killshot 2 updates the upper with various textured leathers to create a fresh look. From soft suedes to smooth leathers with the perfect sheen, it's courtside attitude with a modern touch. To prove you're on top, the rubber gum sole adds the cherry on the bottom.
+
+                        <ul>
+                            <li>Colour Shown: Sail/Gum Yellow/Midnight Navy</li>
+                            <li>Style: 432997-107</li>
+                            <li>Country/Region of Origin: Indonesia</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div className="gallery">
+
+                <div className="head">
+                    Hoaw others are wearing this
+                </div>
+                <div className="text">
+                Upload your photo or mention @Nike on Instagram for a chance to be featured.
+                </div>
+
+                <div className="gallery-box">
+                    <div className="images">
+                        <img src={prd} alt="" />
+                        <div className="g-text">
+                            @ayush_kr
+                        </div>
+                    </div>
+                    <div className="images">
+                        <img src={prd2} alt="" />
+                        <div className="g-text">
+                            @ayush_kr
+                        </div>
+                    </div>
+                    <div className="images">
+                        <img src={prd3} alt="" />
+                        <div className="g-text">
+                            @ayush_kr
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div className="big_pics">
+                <div className="text">
+                Explore the Nike Killshot 2 Leather Men's Shoe
+                </div>
+                <div className="images"><img src={prd} alt="" /></div>
+
+                <div className="text">
+                Explore the Nike Killshot 2 Leather Men's Shoe
+                </div>
+                <div className="images"><img src={prd2} alt="" /></div>
+                <div className="text">
+                Explore the Nike Killshot 2 Leather Men's Shoe
+                </div>
+                <div className="images"><img src={prd3} alt="" /></div>
+            </div>
+ 
+
+ <Trending />
         </section>
+        <Footer />
     </>
 }
 

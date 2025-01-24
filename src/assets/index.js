@@ -13,7 +13,11 @@ import cloth6 from './cloth-6.webp';
 import cloth7 from './cloth-7.webp';
 import gi1 from './gi-1.webp'
 import gi2 from './gi-2.webp'
+import prd from './prd-1.webp'
+import prd2 from './prd-2.webp'
+import prd3 from './prd-3.webp'
 
 
 
-export { india, whiteShirt, blackShirt, cat1, cat2, cat3 , cloth1, cloth2, cloth3, cloth4, cloth5, cloth6, cloth7, gi1, gi2}
+
+export { india, whiteShirt, blackShirt, cat1, cat2, cat3 , cloth1, cloth2, cloth3, cloth4, cloth5, cloth6, cloth7, gi1, gi2, prd, prd2, prd3 };
